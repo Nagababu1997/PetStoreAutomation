@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="api.utilities.ExtentReportManager"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/API Learning/PetStoreAutomation/src/test/java/api/test">
+        <classes>
+            <!--            <class name="api.test.DataDrivenTests">-->
+            <!--                <methods>-->
+            <!--                    <include name="testPostStudent"/>-->
+            <!--                    <include name="testGetStudentDataById"/>-->
+            <!--                    <include name="testDeleteStudentById"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+            <!--            <class name="api.test.StudentTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="testPostStudent"/>-->
+            <!--                    <include name="testGetStudent"/>-->
+            <!--                    <include name="testUpdateStudent"/>-->
+            <!--                    <include name="testDeleteStudent"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+            <class name="api.test.StudentTest1">
+                <methods>
+                    <include name="testPostStudent"/>
+                    <include name="testGetStudent"/>
+                    <include name="testUpdateStudent"/>
+                    <include name="testDeleteStudent"/>
+                </methods>
+            </class><!--            <class name="api.test.UserTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="testPostUser"/>-->
+            <!--                    <include name="testGetUserByName"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+        </classes>
+    </test>
+</suite>
